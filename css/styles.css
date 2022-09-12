@@ -89,6 +89,8 @@ body {
   fill: #757575;
   margin-right: 10px;
   margin-left: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .conteiner {
@@ -455,19 +457,17 @@ h2 {
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
+
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-  pointer-events: all;
-  background-color: #2196f3;
-}
-
-.social-link:hover .badge,
-.social-link:focus .badge {
   fill: #ffffff;
+
+  background-color: #2196f3;
 }
 
 h3 {
@@ -529,6 +529,7 @@ h3 {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -657,6 +658,7 @@ b {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
